@@ -1,4 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
-    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="1"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/var/www/html/ecf/ajout_course.php</file>
+            <file>file:/var/www/html/ecf/formadd.php</file>
+            <file>file:/var/www/html/ecf/lougout.php</file>
+            <file>file:/var/www/html/ecf/connexion.php</file>
+            <file>file:/var/www/html/ecf/admin.php</file>
+            <file>file:/var/www/html/ecf/admin/block.php</file>
+            <file>file:/var/www/html/ecf/resulta_ind.php</file>
+            <file>file:/var/www/html/ecf/style.css</file>
+            <file>file:/var/www/html/ecf/calcul.js</file>
+            <file>file:/var/www/html/ecf/index.php</file>
+            <file>file:/var/www/html/ecf/users.php</file>
+            <file>file:/var/www/html/ecf/js/function.js</file>
+            <file>file:/var/www/html/ecf/connexion_bdd.php</file>
+            <file>file:/var/www/html/ecf/inc/functions.php</file>
+            <file>file:/var/www/html/ecf/inc/connexionsbdd.php</file>
+            <file>file:/var/www/html/ecf/evenement.php</file>
+            <file>file:/var/www/html/ecf/ajout_event.php</file>
+            <file>file:/var/www/html/ecf/entete.php</file>
+            <file>file:/var/www/html/ecf/admin/admin.php</file>
+            <file>file:/var/www/html/ecf/resultat.php</file>
+            <file>file:/var/www/html/ecf/form_modif.php</file>
+            <file>file:/var/www/html/ecf/modif.php</file>
+        </group>
+    </open-files>
 </project-private>

@@ -6,11 +6,30 @@
 body
 {
     width:100%;
-    background: black;
+    background: #3b5787;
     color:white;
 }
-h1{
-    color:white;
+.titre {
+
+    color: white;
+display: flex;
+}
+h1.titre{
+    font-family: 'Akronim';
+    font-size: 61px;
+}
+
+.bonjour{
+    color:#66ed15;
+    
+       text-decoration: blink;
+
+}
+header img {
+    border-radius:50%;
+}
+.bonjour{
+    text-align: left;
 }
 
 /******************************************************************************/
@@ -22,8 +41,9 @@ header
     flex-direction: row;
     width:100%;
     color:white;
-    background-color: #aaa6a6;
-   
+    background-image: url(image/entete.png);
+    background-color: black;
+
 }
 #head_one
 {
@@ -39,7 +59,7 @@ header
 }
 
 /******************************************************************************/
-/*                                 Nav                                        */
+/*      barre de navigation
 /******************************************************************************/
 
 
@@ -52,7 +72,7 @@ ul li{
     display: table-cell;
 }
 ul{
-   
+
     background: linear-gradient(deepskyblue, dodgerblue);
 }
 ul{
@@ -64,10 +84,10 @@ ul{
 }
 ul{
     background: grey;
-    
+
 }
 ul{
-    
+
     border-radius: 3px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, .3),
                 0 3px 5px rgba(0, 0, 0, .2),
@@ -77,7 +97,7 @@ ul{
 ul li a{
     display: block;
     text-align: center;
-    color: rgba(0, 0, 0, .7); 
+    color: rgba(0, 0, 0, .7);
     text-decoration: none;
     padding: 8px 8px 17px 8px;
 }
@@ -85,12 +105,12 @@ ul li a{
     text-shadow: 0 1px 0 rgba(255, 255, 255, .4);
 }
 ul li a{
-    
-    box-shadow: 0 1px 0 rgba(255, 255, 255, .7) inset, 
-                0 -1px 0 hsl(210, 100%, 32%) inset, 
-                0 -2px 0 hsl(210, 100%, 38%) inset, 
-                0 -3px 0 hsl(210, 100%, 44%) inset, 
-                0 -4px 0 hsl(210, 100%, 50%) inset, 
+
+    box-shadow: 0 1px 0 rgba(255, 255, 255, .7) inset,
+                0 -1px 0 hsl(210, 100%, 32%) inset,
+                0 -2px 0 hsl(210, 100%, 38%) inset,
+                0 -3px 0 hsl(210, 100%, 44%) inset,
+                0 -4px 0 hsl(210, 100%, 50%) inset,
                 0 -5px 0 hsl(210, 100%, 60%) inset;
 }
 ul li:first-child a{
@@ -99,71 +119,35 @@ ul li:first-child a{
 ul li:last-child a{
     border-radius: 0 3px 3px 0;
 }
-ul li a:hover, 
+ul li a:hover,
 ul li a:focus{
     background: rgba(255,255,255,.2);
-    box-shadow: 0 1px 0 rgba(255, 255, 255, .7) inset, 
-                0 -1px 0 hsl(210, 100%, 42%) inset, 
-                0 -2px 0 hsl(210, 100%, 48%) inset, 
-                0 -3px 0 hsl(210, 100%, 54%) inset, 
-                0 -4px 0 hsl(210, 100%, 60%) inset, 
-                0 -5px 0 hsl(210, 100%, 70%) inset; 
-} 
+    box-shadow: 0 1px 0 rgba(255, 255, 255, .7) inset,
+                0 -1px 0 hsl(210, 100%, 42%) inset,
+                0 -2px 0 hsl(210, 100%, 48%) inset,
+                0 -3px 0 hsl(210, 100%, 54%) inset,
+                0 -4px 0 hsl(210, 100%, 60%) inset,
+                0 -5px 0 hsl(210, 100%, 70%) inset;
+}
 ul li a:active{
-    background: linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.1)); 
+    background: linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.1));
     box-shadow: 0 0 2px rgba(0,0,0,.3) inset;
 }
 ul li a:hover,
 ul li a:focus{
-   
+
     padding: 8px 25px 17px 25px;
 }
 ul li a{
-   
+
     transition: padding .3s;
-} 
+}
 ul li a{
-   
+
     transition: padding .3s, background .3s;
 }
 
-ou plus simplement 
 
-ul li a{
-   
-    transition: all .3s;
-}
-ul li a{
-    
-    transition: all .3s .1s;
-}
-
-ul li a:hover,
-ul li a:focus{
-    
-    transition: all .3s 0s;
-}
-            ul li a{
-    
-    position: relative;
-}
-ul li a::before{
-    content: '';
-    position: absolute;
-    left: 50%;
-    bottom: 9px;
-    margin-left: -2px;
-    width: 4px;
-    height: 4px;
-    border-radius: 50%;
-    background: rgba(0, 0, 0, .5);
-}
-ul li a:hover::before,
-ul li a:focus::before{
-    background: white;
-    box-shadow: 0 0 2px white, 
-                0 -1px 0 rgba(0, 0, 0, .4);
-}
             /******************************************************************************/
 /*                                 Nav                                        */
 /******************************************************************************/
@@ -195,7 +179,7 @@ ul li a:focus::before{
     display: flex;
     justify-content: center;
 }
-.circle span { 
+.circle span {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -219,37 +203,78 @@ ul li a:focus::before{
 /******************************************************************************/
 .alert{
     color:red;
-    
 }
+.formulaire{
+    background-image: url(image/bienvenue.jpg);
+    background-repeat:no-repeat;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: 100%;
+    color:black;
+}
+ h1 form1{
+    background-color: #d80fb2;
+    text-align: center
+ }   
+.modif{
+     background-image: url(image/bienvenue.jpg);
+    background-repeat:no-repeat;
+    color:black;
+    margin: auto;
+}
+label{
+display:block;
+float:left;
+width:150px;
+}
+
+input{
+    float: left;
+}
+ 
 /******************************************************************************/
 /*                                 formulaire users                                      */
 /******************************************************************************/
 /******************************************************************************/
 /*                                 evenement a venir                                    */
 /******************************************************************************/
-.event-is-coming{
-    background-color: #bdc6deb3;
-   
+#ancre {
+  background-image: url(image/event.jpg);
+  background-repeat:no-repeat;
+  background-attachment: fixed;
+  color:black;
 }
+.eve {
+  background-color: black;
+opacity: 0.6;
+color: #12f51d;
+text-shadow: 0 0 3px #161B05;
+
+}
+
+
           /******************************************************************************/
 /*                                 description de l'evenement                                */
 /******************************************************************************/
 
-    .des{        
+    .des{
     border: 1px solid black;
     width:50% ;
     margin-left: 25%;
 }
-           
+
  /******************************************************************************/
 /*                                 boutton ajouter evenement                                   */
 /******************************************************************************/
 
 
 .add_event {
-         border: 1px solid beige;
+     border: 1px solid beige;
     border-radius: 30%;
-    margin-left: 78%;
+    margin-right: 18%;
     background-color: #AEEE00;
 }
  /******************************************************************************/
@@ -263,21 +288,32 @@ ul li a:focus::before{
     background-image: url(image/resultat.jpg);
     opacity: 0.6;
     text-align: center;
-    font-size: 150%
+    font-size: 150%;
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+}
+.result {background-color: #f31d96;
+height: auto;
+width: 50%;
+text-decoration: none;
+opacity: 0.6;
+display: block;
+margin: auto;
+color: black;
 }
 /******************************************************************************/
 /*                                 nous connaitre                                   */
 /******************************************************************************/
 .row.text-center{
     background-image: url('image/course.jpg')  ;
-    background-repeat : repeat-x repeat-y;
-    color: #8d00ff;
+    background-repeat:repeat-x,repeat-y;
+    color: blue;
 }
 /******************************************************************************/
 /*                                 boutton ajouter une course                                    */
 /******************************************************************************/
 .boutton{
-        background-color: #451ee3;
+        background-color: #4B2351;
     margin-right: 78%;
     border-radius: 45%;
     margin-top: 1%;
@@ -290,4 +326,140 @@ ul li a:focus::before{
 
 h1{
     color:black;
+    text-align: center;
+   
 }
+
+h2{
+    color:black;
+}
+/******************************************************************************/
+/*                                 table                               */
+/******************************************************************************/
+table{
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+    background-image: ul('image/solidarité.jpg');
+    
+}
+tr{
+    background: #6a92a2;
+    height: 40px;
+}
+tr:nth-child(odd){
+    background: black;
+}
+td{
+    border:1px white solid;
+}
+
+/******************************************************************************/
+/*                                 responsive!!!!!!!!!                                  */
+/******************************************************************************/
+@media screen and (max-width: 640px) {
+  body
+  {
+      width:auto;
+
+  }
+    input {
+        width:95%;
+    }
+    header h1 {
+        width:100%;
+        display:block;
+        text-align: center;
+    }
+    header img{
+        max-width: 70px;
+        max-height: 70px;
+        
+    }
+    ul{
+      display: flex;
+  flex-direction: column; /* direction d'affichage verticale pour la barre de navigation*/
+  justify-content: center;
+    }
+    IMG {
+        display: flex;
+      max-width: 100px;
+      max-height: 100px;
+    }
+    .badges{
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        margin-left: 30%;
+}
+
+ h1, h2, h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.h1, .h2, .h3,h1, h2, h3 {
+
+    color: red;
+    background-color: black;
+}
+h1 {
+
+    font-size: 2em;
+    width:auto;
+    display:block;
+    text-align: center;
+    font-style:normal;
+
+}
+p {
+  color:red;
+  width:auto;
+  display:block;
+  text-align: center;
+  font-style:normal;
+  box-shadow: black;
+}
+.texte {
+  margin: 38px;
+}
+
+}
+/******************************************************************************/
+/*                                 Nav        ou plus simplement
+
+ul li a{
+
+    transition: all .3s;
+}
+ul li a{
+
+    transition: all .3s .1s;
+}
+
+ul li a:hover,
+ul li a:focus{
+
+    transition: all .3s 0s;
+}
+            ul li a{
+
+    position: relative;
+}
+ul li a::before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 9px;
+    margin-left: -2px;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, .5);
+}
+ul li a:hover::before,
+ul li a:focus::before{
+    background: white;
+    box-shadow: 0 0 2px white,
+                0 -1px 0 rgba(0, 0, 0, .4);
+}                                */
+/******************************************************************************/
