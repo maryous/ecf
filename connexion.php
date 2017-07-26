@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-
+<!--espace connexion pour l'admin et les autres utilisateurs-->
 <html>
     <head>
         <meta charset="UTF-8">
@@ -29,8 +29,8 @@ session_start();
 //var_dump($_POST);
 if (isset($_POST['connect']) && isset($_POST['password'])) {
 
-    $connect = $_POST['connect'];
-    $password = $_POST['password'];
+    $connect = htmlentities( $_POST['connect']);
+    $password = htmlentities ($_POST['password']);
 
 
     //connexion a la base ddd

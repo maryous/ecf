@@ -31,12 +31,16 @@
                     <!--<li><a href="#ancre3">résultat par endroit</a></li>-->
                     <li><a href="#ancre1">resultat général</a></li>
                     <li><a href="users.php">créer un compt</a></li>
-                    <?php if (!isset($_SESSION['login'])) 
-                    echo '<li><a href="connexion.php">se connecter</a></li>' ?>
+                    <?php
+                    if (!isset($_SESSION['login']))
+                        echo '<li><a href="connexion.php">se connecter</a></li>'
+                        ?>
                     <li><a href="lougout.php">se déconnecter</a></li>
-                   <?php if (isset($_SESSION['admin'])) {
-                    echo '<li><a href="">admin</a></li>';
-                                                      } ?>
+                    <?php
+                    if (isset($_SESSION['admin'])) {
+                        echo '<li><a href="">admin</a></li>';
+                    }
+                    ?>
 
 
                 </ul>

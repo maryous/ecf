@@ -1,6 +1,6 @@
 
 <?php
-///////////////////////////////CREATION D ENOUVEAU UTILISATEUR/////////
+///////////////////////////////CREATION De NOUVEAU UTILISATEUR/////////
 //connexion a la BDD
 include'connexion_bdd.php';
 
@@ -12,7 +12,7 @@ if (isset($_POST['submit'])) {
     //on fait le test sur le boutton submit(si on clic sur inscrivez vous)
     $errors = [];
 
-    //on commence par le champs pseudo si ce champs est vide et pas valide(on utilise les expression regulieres)
+    //on commence par le champs pseudo si ce champs est vide et pas valide(on utilise les expression regulieres pour securiser)
 
     if (empty($_POST['new_user']) || !preg_match('/^[a-zA-Z0-9]+$/', $_POST['new_user'])) {
 
@@ -23,7 +23,7 @@ if (isset($_POST['submit'])) {
         $req->execute([$_POST['new_user']]);
         $users = $req->fetch();
         if ($users) {
-            $errors['new_user'] = 'ce pseudo est deja utilisé!!';
+            $errors['new_user'] = 'ce pseudo est déja utilisé!!';
         }
     }
 
@@ -62,11 +62,11 @@ if (isset($_POST['submit'])) {
     <div class='alert'>
         <p>vous navez pas rempli le formulaire correctement</p>
         <ul>
-    <?php
-    foreach ($errors as $key => $value) {
-        echo "<li>" . $value . "</li>";
-    }
-    ?>
+            <?php
+            foreach ($errors as $key => $value) {
+                echo "<li>" . $value . "</li>";
+            }
+            ?>
 
         </ul>
     </div>
@@ -83,13 +83,14 @@ if (isset($_POST['submit'])) {
         <link rel="stylesheet" href="style.css">
 
         <title></title>
-<?php include 'entete.php'; ?>
+        <?php include 'entete.php'; ?>
 
     <h1> espace inscription </h1>
 
 
     <!--traitement de captcha-->
     <script src='https://www.google.com/recaptcha/api.js'></script>
+    <!--traitement de captcha-->
 </head>
 <body>
 

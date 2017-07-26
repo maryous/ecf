@@ -31,8 +31,10 @@
                     <!--  -->
                     <div class="row text-center" id='connaitre'>
                         <div class='texte'>
+                            <!--nous connaitre-->
                             <h1>Faites grandir une cause à grands pas</h1>
-                            <p><strong>Participez à l’un des plus <strong>grands événements caritatifs</strong> de France&nbsp;<strong>en courant ou marchant</strong> au profit d’une cause qui vous tient à coeur.</p>
+                            <p><strong>Participez à l’un des plus <strong>grands événements caritatifs</strong> de France<strong>
+                                        en courant ou marchant</strong> au profit d’une cause qui vous tient à coeur.</p>
 
                             <br><p> Plus de 200 causes représentées. Et vous, pour qui courez-vous ?</strong></p>
                         </div>
@@ -60,7 +62,7 @@
 
                         </div>
                     </div>
-                    <!-- evenement approche!!. -->
+                    <!-- evenement approche!!.LAFFICHAGE DES COURSES PASSÉES ET A VENIR -->
                     <?php include'evenement.php' ?>
 
                 </div>
@@ -70,6 +72,7 @@
         </main>
         <section class='resulta'>
             <div class='include_result'>
+                <!-- AFFICHAGE DU CLASSEMENT GENARL DE 2017!!. -->
                 <?php include 'resultat.php' ?>
             </div>
         </section>
