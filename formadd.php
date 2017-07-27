@@ -1,4 +1,8 @@
 <!DOCTYPE html>
+<?php session_start(); 
+include'class.php';
+$Ajoutevent= new Ajoutevent();
+?>
 <!--
 formulaire pour ajouter une course
 -->
@@ -10,7 +14,7 @@ formulaire pour ajouter une course
     </head>
     <body>
         <h1>ajouter une course</h1>
-        <form action='ajout_event.php'name='ajout' method='post'class='formulaire'>
+        <form action='formadd.php'name='ajout' method='post'class='formulaire'>
             <p><label>lieux: <input name='lieux1' class="input1" placeholder="entrez le lieu de votre evenement" type="text" required/></label></p>
             
             <p><label> description: </label></p>
@@ -19,5 +23,6 @@ formulaire pour ajouter une course
             <input type="submit" name="valider" value="ajouter"/>
             <a href="index.php"><img src="image/home.gif"></a>
         </form>
+        <?php $Ajoutevent-> ajoutevent() ?>
     </body>
 </html>

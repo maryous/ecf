@@ -308,7 +308,7 @@ color: black;
     background-image: url('image/course.jpg')  ;
     background-repeat:repeat-x,repeat-y;
     color: blue;
-    background-attachment: fixed;
+   
 }
 /******************************************************************************/
 /*                                 boutton ajouter une course                                    */

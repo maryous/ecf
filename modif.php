@@ -20,21 +20,6 @@ if ($executeIsok) {
 } else {
     $message = 'echec de la mise à jour du contact';
 }
+echo $message ;
 ?>
 
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <!--  <link rel="stylesheet" href="style.css">-->
-
-        <title></title>
-    </head>
-    <h1>modification :resultat</h1>
-
-</head>
-
-<body>
-    <h1><?= $message ?></h1>
-
-</body>
-</html>
