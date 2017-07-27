@@ -1,9 +1,9 @@
 <?php
-require_once('inc/functions.php');
+
 if (isset($_SESSION['admin'])) {
 
 
-    require_once'/admin/block.php';
+ 
 }
 
 //rendre l'affichage des resultat par meeting dinamique
@@ -62,7 +62,7 @@ and open the template in the editor.
 
         function calculpoints() {
 
-            var A = document.getElementById('age').value;//variable pour année de naissance 
+            var A = document.getElementById('age').value;//variable pour année de naissance
             var Y = new Date().getFullYear() - A;//calcul de l'age par rapport a la date actuelle
             var T = document.getElementById('time').value;//variable pour le temps
 
